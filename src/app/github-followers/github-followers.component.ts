@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import {combineLatest} from 'rxjs';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/switchMap';
+
 
 
 
