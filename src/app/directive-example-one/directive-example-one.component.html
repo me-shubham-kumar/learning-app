@@ -1,0 +1,22 @@
+<div class="container">
+    <div *ngIf="items.length > 0 then present else empty"></div>
+    <ng-template #present>
+        <h1>Item is present</h1>
+    </ng-template>
+    <ng-template #empty>
+        <h1>Item box is empty</h1>
+    </ng-template>
+</div>
+
+<!--
+    Underneth the hood what leading asterisk does "*" *ngIf does
+    <div *ngIf="items.length > 0 then present else empty"></div>
+    so below step will be taken by Angular. We can also write as below written but to short
+    hand the work we write like this.
+    <ng-template [ngIf]="course.length>0">
+        <h1>Item is present</h1>
+    </ng-template>
+    <ng-template [ngIf]="!(course.length>0)">
+        <h1>Item box is empty</h1>
+    </ng-template>
+-->

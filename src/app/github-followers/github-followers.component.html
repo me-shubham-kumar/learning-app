@@ -1,0 +1,4 @@
+<div *ngFor="let website of websites">
+    <h3>{{website.name}}</h3>
+    <p><a [routerLink]="[website.link,website.name]">{{website.link}}</a></p>
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+    <button (click)="loadCourse()">Load Courses</button>
+    <button (click)="addCourse()">Add</button>
+    <ul>
+        <li *ngFor="let course of courses;index as i;trackBy: trackCourses">
+            {{i}} - {{course.name}}
+            <button (click)="removeCourse(course)">Remove</button>
+        </li>
+    </ul>
+</div>
